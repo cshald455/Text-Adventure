@@ -1,0 +1,36 @@
+<html>
+   <head>
+      <script>
+          function getName()
+          {
+            var x = window.localStorage.getItem('userName');
+            document.getElementById("welcome").innerHTML = x;
+          }
+          function knight()
+          {
+          window.location.href = "knight.html";
+
+          }
+          function mage()
+          {
+          window.location.href = "mage.html";
+
+          }
+          function thief()
+          {
+          window.location.href = "thief.html";
+
+          }
+      </script>
+   </head>
+   <body>
+      <h1>Nice to meet you</h1>
+      <p id = "welcome"></p>
+      <input type = "button" value = "See Name" onclick = "getName()">
+      <br> <br>
+      <h1> Which class do you choose? <h1>
+      <img src = "knight.jpg" width = "150px" height = "150px" onclick = "knight()">
+      <img src = "mage.jpg" width = "150px" height = "150px" onclick = "mage()">
+      <img src = "thief.jpg" width = "150px" height = "150px" onclick = "thief()">
+   </body>
+</html>

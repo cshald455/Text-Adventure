@@ -1,0 +1,22 @@
+<html>
+   <head>
+      <script>
+          function saveName()
+          {
+             var x = document.getElementById("name").value;
+            window.localStorage.setItem('userName', x);
+          }
+          function pageTwo()
+          {
+              window.location.href = "PageTwo.html";
+          }
+      </script>
+   </head>
+   <body>
+      <h1>Welcome, traveller.</h1>
+      <p>What is your name?</p>
+      <input type = "text" id = "name">
+      <input type = "button" value = "Save" onclick = "saveName()">
+      <input type = "button" value = "Continue" onclick = "pageTwo()">
+   </body>
+</html>
